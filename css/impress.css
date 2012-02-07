@@ -39,13 +39,13 @@ body {
     line-height: 1;
 }
 ol, ul {
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
     list-style: disc;
 }
 li {
     text-align: left;
-    margin: 1.0em 0;
+    margin: 0.5em 0;
 }
 blockquote, q {
     quotes: none;
@@ -81,7 +81,7 @@ b, strong { font-weight: bold }
 i, em { font-style: italic}
 
 a {
-    color: inherit;
+    color: #00a;
     text-decoration: none;
     padding: 0 0.1em;
     background: rgba(255,255,255,0.5);
@@ -106,7 +106,7 @@ body     { pointer-events: none; }
 
 /* COMMON STEP STYLES */
 .step {
-    width: 900px;
+    width: 1200px;
     padding: 40px;
 
     -webkit-box-sizing: border-box;
@@ -133,7 +133,7 @@ body     { pointer-events: none; }
 }
 
 .step:not(.active) {
-    opacity: 0.3;
+    opacity: 0.10;
 }
 
 /* STEP SPECIFIC STYLES */
@@ -141,13 +141,84 @@ h1  {
     font-size: 150%;
     font-weight: bold;
 }
+
 .tagline { font-size: 80%; }
-pre {
+
+code, .step .syntaxhighlighter {
+    width: 85% !important;
+    margin-top: 1.0em;
+    margin-left: 10% !important;
+    margin-bottom: 2.0em;
     text-align: left;
-    font-size: 80%;
-    padding: 1.0em;
-    background: #ff0;
+    font-size: 75% !important;
+    padding: 0.5em;
+    background: #fff;
 }
+
+.box {
+    display: table-cell;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    background: #0f0;
+    color: #000;
+    }
+
+#transform-demo {
+    -webkit-transform-style: preserve-3d;
+    }
+    #transform-demo #box1 {
+        top: 50px;
+        left: 300px;
+        }
+    #transform-demo #box2 {
+        top: 50px;
+        left: 500px;
+
+        -webkit-transform: perspective(1000) rotateY(45deg) scale3d(1.0,1.5,1.0);
+        }
+
+#transitions-demo h1 {
+    margin-top: 4.0em;
+    }
+#transitions-demo .demo {
+    min-height: 400px;
+    }
+    #transitions-demo #box3 {
+        left: 487px;
+        background-color: #00f;
+        color: #fff;
+
+        width: 150px;
+
+        -webkit-transition-property: width;
+        -webkit-transition-duration: 3s;
+        }
+        #transitions-demo #box3.transitioned {
+            width: 250px;
+            }
+
+#animations-demo  #box4 {
+    left: 487px;
+    background: #f00;
+    color: #fff;
+
+    -webkit-animation-name: rotate-and-move;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    }
+
+    @-webkit-keyframes rotate-and-move 
+    {
+        0%    { -webkit-transform: rotateY(0deg); }
+        50%   { -webkit-transform: rotateY(180deg); }
+        100%  { -webkit-transform: rotateY(360deg); }
+    }
 
 
 /* overview step */

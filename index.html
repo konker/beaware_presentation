@@ -7,9 +7,14 @@
     <meta name="description" content="FIXME">
     <meta name="author" content="Konrad Markus" />
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
-
     <link href="css/impress.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="js/SyntaxHighlighter/XRegExp.js"></script>
+    <script type="text/javascript" src="js/SyntaxHighlighter/shCore.js"></script>
+    <script type="text/javascript" src="js/SyntaxHighlighter/shBrushCss.js"></script>
+    <script type="text/javascript" src="js/SyntaxHighlighter/shBrushJScript.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/SyntaxHighlighter/shCore.css"/>
+    <link type="text/css" rel="Stylesheet" href="css/SyntaxHighlighter/shThemeDefault.css" />
 </head>
 <body>
     <div id="impress" class="impress-not-supported">
@@ -20,81 +25,320 @@
         </div>
 
         <div id="splash" class="step" data-x="0" data-y="0" data-scale="10">
+            <p><img src="img/beaware.png"/></p>
             <h1>BeAware Energylife</h1>
             <p class="tagline">Rationale and Techniques</p>
+            <p class="tagline"><a href="http://www.energyawareness.eu/">http://www.energyawareness.eu/</a>
         </div>
 
-        <div class="step" data-x="-1500" data-y="1500" data-scale="1.0">
-            <h1>What does it do?</h1>
+        <div class="step" data-x="-1500" data-y="2000" data-scale="1.0">
+            <h1>In a nutshell</h1>
             <ul>
-                <li>Centrally controlled and updateable</li>
-                <li>Developer skills at the time</li>
+                <li>Sensors in a home measure the electricity usage of various devices.</li>
+                <li>Data is transmitted and stored in a central data store.</li>
+                <li>The Energylife application displays energy usage information in a meaningful way to the occupants of the home.</li>
+                <li>The purpose is to encourage energy saving via information, data visualizations, game mechanics, and community.</li>
             </ul>
         </div>
 
-        <div class="step" data-x="0" data-y="1500" data-scale="1.0">
-            <h1>Why web application?</h1>
+        <div class="step" data-x="0" data-y="2000" data-scale="1.0">
+            <h1>Energylife</h1>
             <ul>
-                <li>Centrally controlled and updateable the quick brown fox jumped over the lazy dogs socks.</li>
-                <li>Developer skills at the time</li>
-                <li>Centrally controlled and updateable</li>
-                <li>Developer skills at the time</li>
-                <li>Centrally controlled and updateable</li>
-                <li>Developer skills at the time</li>
-                <li>Centrally controlled and updateable</li>
-                <li>Developer skills at the time</li>
+                <li>A web application targetted at the iphone.</li>
+                <li>Designed to run full screen.</li>
+                <li>Makes XHR requests to the central data store.</li>
+                <li>All communications use JSON.</li>
             </ul>
         </div>
 
-        <div class="step" data-x="1500" data-y="1500" data-scale="1.0">
-            <h1>CSS3 3D transforms</h1>
-<pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>div</span><span style='color:#808030; '>#</span>stage <span style='color:#800080; '>{</span>
-    -webkit-perspective<span style='color:#808030; '>:</span> <span style='color:#008c00; '>500</span><span style='color:#800080; '>;</span>
-    <span style='color:#800080; '>}</span>
-</pre>
+        <div class="step" data-x="1500" data-y="2000" data-scale="1.0">
+            <h1>Why a web application?</h1>
+            <ul>
+                <li>Centrally controlled and updateable.</li>
+                <li>Potentially more portable.</li>
+                <li>iPhone support for advanced CSS3 features.</li>
+                <li>Developer preference at the time.</li>
+            </ul>
+        </div>
+
+        <div id="demo" class="step" data-x="-500" data-y="2500" data-z="-000" data-rotate="90">
+            <h1>Demo</h1>
         </div>
 
         <div class="step" data-x="-1500" data-y="3000" data-scale="1.0">
-            <h1>What does it do?</h1>
+            <h1>The Carousel</h1>
             <ul>
-                <li>Centrally controlled and updateable</li>
-                <li>Developer skills at the time</li>
+                <li>Ability to see all devices at a glance.</li>
+                <li>Easily read visual cues on device cards.</li>
+                <li>Quickly bring interesting ones to the front</li>
+                <li>Each device card is self contained - further information and functionality on the back of the card.</li>
             </ul>
         </div>
 
         <div class="step" data-x="0" data-y="3000" data-scale="1.0">
-            <h1>Why web application?</h1>
+            <h1>How does it work?</h1>
             <ul>
-                <li>Centrally controlled and updateable the quick brown fox jumped over the lazy dogs socks.</li>
-                <li>Developer skills at the time</li>
-                <li>Centrally controlled and updateable</li>
-                <li>Developer skills at the time</li>
-                <li>Centrally controlled and updateable</li>
-                <li>Developer skills at the time</li>
-                <li>Centrally controlled and updateable</li>
-                <li>Developer skills at the time</li>
+                <li>iPhone implemented advanced CSS and javascript features not present in other browsers.
+                    <ul>
+                        <li>CSS3 3D transforms</li>
+                        <li>CSS3 transitions</li>
+                        <li>CSS3 animations</li>
+                        <li>Touch events</li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
         <div class="step" data-x="1500" data-y="3000" data-scale="1.0">
             <h1>CSS3 3D transforms</h1>
-<pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>div</span><span style='color:#808030; '>#</span>stage <span style='color:#800080; '>{</span>
-    -webkit-perspective<span style='color:#808030; '>:</span> <span style='color:#008c00; '>500</span><span style='color:#800080; '>;</span>
-    <span style='color:#800080; '>}</span>
-</pre>
+            <p class="tagline"><a href="http://www.w3.org/TR/css3-3d-transforms/">http://www.w3.org/TR/css3-3d-transforms/</a></p>
+
+            <ul>
+                <li><q>CSS 3D Transforms extends CSS Transforms to allow elements rendered by CSS to be transformed in three-dimensional space.
+                </q></li>
+                <li>Should use browser prefixes: -webkit-, -moz-, -o-, -ms-</li>
+            </ul>
+            <pre class="brush: css">
+                transform: &lt;transform function&gt;;
+            </pre>
         </div>
 
-        <!--
+        <div class="step" data-x="1500" data-y="3500" data-scale="1.0">
+            <ul>
+                <li>transform functions:
+                    <ul>
+                        <li>translateX(x), translate3d(x, y, z)</li>
+                        <li>scaleY(y), scale3d(x, y, z)</li>
+                        <li>rotateZ(z), rotate3d(x, y, z, angle)</li>
+                        <li>perspective(n)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="step" data-x="1500" data-y="4000" data-scale="1.0">
+            <pre class="brush: css">
+            #transform-demo #box2 {
+                -webkit-perspective(1000);
+                -webkit-transform: rotateY(45deg) scale3d(1.0,1.5,1.0);
+                }
+            </pre>
+            <div id="transform-demo">
+                <div id="box1" class="box">box1</div>
+                <div id="box2" class="box">box2</div>
+            </div>
+        </div>
+
+        <div class="step" data-x="1500" data-y="4750" data-scale="1.0">
+            <h1>CSS3 3D transforms in Energylife</h1>
+            <pre class="brush: css">
+            div#cardRing > div.card {
+                -webkit-perspective: 600;
+                -webkit-transform: translateX(n), translateZ(m);
+                }
+            </pre>
+            <p><img src="img/carousel.png"/></p>
+        </div>
+
+        <div class="step" data-x="-1500" data-y="4500" data-scale="1.0">
+            <h1>CSS3 transitions</h1>
+            <p class="tagline"><a href="http://www.w3.org/TR/css3-transitions/">http://www.w3.org/TR/css3-transitions/</a></p>
+            <ul>
+                <li><q>CSS Transitions allows property changes in CSS values to occur smoothly over a specified duration.</q></li>
+                <li>Specify a CSS property which should change gradually</li>
+                <li>Specify how long the change should take</li>
+            </ul>
+            <pre class="brush: css">
+                transition-property: &lt;some animatable property&gt;;
+                transition-duration: 2s;
+            </pre>
+        </div>
+
+        <div class="step" data-x="-1500" data-y="5250" data-scale="1.0">
+            <h1>CSS3 transitions</h1>
+            <ul>
+                <li>Some animatable properties:
+                    <ul>
+                        <li>background-color</li>
+                        <li>color</li>
+                        <li>width, height</li>
+                        <li>top, left, bottom, right</li>
+                        <li>opacity</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="transitions-demo" class="step" data-x="-1500" data-y="6000" data-scale="1.0">
+            <h1>CSS3 transitions</h1>
+            <pre class="brush: css">
+            #box3 {
+                width: 150px;
+                -webkit-transition-property: width;
+                -webkit-transition-duration: 3s;
+                }
+                #box3.transitioned {
+                    width: 250px;
+                    }
+            </pre>
+            <div class="demo">
+                <div id="box3" class="box">box3</div>
+                <button onclick="document.getElementById('box3').setAttribute('class', 'box transitioned'); document.getElementById('box3').innerHTML = '#box3.transitioned'">transition</button>
+            </div>
+        </div>
+
+        <div class="step" data-x="-1500" data-y="6750" data-scale="1.0">
+            <h1>CSS3 transitions in Energylife</h1>
+            <ul>
+                <li>Transitions are used to flip the card over when it is 'clicked'</li>
+                <li>In this case the animatable property is -webkit-transform</li>
+            </ul>
+            <pre class="brush: css">
+            div#cardRing &gt; div.card &gt; div.cardWrapper {
+                -webkit-transition-property: -webkit-transform;
+                -webkit-transition-duration: 1.5s;
+                }
+
+            div#cardRing &gt; .flipped &gt; div.cardWrapper {
+                /* rotate the card 180 degrees along the y-axis. */
+                -webkit-transform: rotateY(180deg) scale(2, 2);
+                }
+            </pre>
+        </div>
+
+        <div class="step" data-x="0" data-y="6750" data-scale="1.0">
+            <h1>CSS3 animations</h1>
+            <p class="tagline"><a href="http://www.w3.org/TR/css3-animations/">http://www.w3.org/TR/css3-animations/</a></p>
+            <ul>
+                <li><q>CSS Animations allow an author to modify CSS property values over time.</q></li>
+                <li>Declaritively specify named animation effects, without resorting to javascript.</li>
+            </ul>
+        </div>
+
+        <div id="animations-demo" class="step" data-x="0" data-y="7500" data-scale="1.0">
+            <h1>CSS3 animations</h1>
+            <pre class="brush: css">
+            #box4 {
+                -webkit-animation-name: rotate-and-move;
+                -webkit-animation-duration: 4s;
+                -webkit-animation-iteration-count: infinite;
+                }
+
+                @-webkit-keyframes rotate-and-move 
+                {
+                    0%    { -webkit-transform: rotateY(0deg); }
+                    50%   { -webkit-transform: rotateY(180deg); }
+                    100%  { -webkit-transform: rotateY(360deg); }
+                }
+            </pre>
+            <div class="demo">
+                <div id="box4" class="box">#box4</div>
+            </div>
+        </div>
+
+        <div class="step" data-x="0" data-y="8500" data-scale="1.0">
+            <h1>CSS3 animations in Energylife</h1>
+            <ul>
+                <li>When a device is exceeding it's energy usage target the relevant card pulsates to indicate that there is a problem.</li>
+                <li>Animates opacity</li>
+            </ul>
+            <pre class="brush: css">
+            @-webkit-keyframes pulsate 
+            {
+                0%    { opacity: 0.5; }
+                50%   { opacity: 1; }
+                100%  { opacity: 0.5; }
+            }
+            </pre>
+        </div>
+
+        <div class="step" data-x="1500" data-y="8500" data-scale="1.0">
+            <h1>Touch events</h1>
+            <p class="tagline"><a href="http://www.w3.org/TR/touch-events/">http://www.w3.org/TR/touch-events/</a></p>
+            <ul>
+                <li><q>A set of low-level events that represent one or more points of contact with a touch-sensitive surface.</q></li>
+                <li>Invented by apple to support multi-touch events on the iphone browser</li>
+                <li>Is in the process of becoming a standard.</li>
+            </ul>
+        </div>
+
+        <div class="step" data-x="1500" data-y="9250" data-scale="1.0">
+            <h1>Touch events</h1>
+            <ul>
+                <li>
+                    Three main events:
+                    <ul>
+                        <li>touchstart</li>
+                        <li>touchmove</li>
+                        <li>touchend</li>
+                    </ul>
+                </li>
+            </li>
+        </div>
+
+        <div class="step" data-x="1500" data-y="9750" data-scale="1.0">
+            <h1>Touch events in Energylife</h1>
+            <ul>
+                <li>Used to rotate the carousel when user "drags".</li>
+                <li>touchstart event
+                    <ul>
+                        <li>track the initial position of the carousel</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="step" data-x="1500" data-y="10100" data-scale="1.0">
+            <ul>
+                <li>touchmove events
+                    <ul>
+                        <li>track how much the user has moved.</li>
+                        <li>rotate the carousel incrementally.</li>
+                        <li>also distinguishes it as a "drag" event rather than a "click".</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="step" data-x="1500" data-y="10350" data-scale="1.0">
+            <ul>
+                <li>touchend
+                    <ul>
+                        <li>rotate the carousel to the nearest card position.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="step" data-x="-1500" data-y="10350" data-scale="1.0">
+            <h1>Recap</h1>
+            <ul>
+                <li>CSS3 3D transforms - change the display of elements in 3D space.</li>
+                <li>CSS3 transitions - make changes to properties into smooth transitions.</li>
+                <li>CSS3 animations - declare animations in CSS rather than code in javascript.</li>
+                <li>Touch events - take advantage of touch screens and multi-touch gestures.</li>
+                <li><a href="http://html5please.com/">http://html5please.com/</a></li>
+            </ul>
+        </div>
+
+        <div class="step" data-x="0" data-y="11350" data-scale="4.0">
+            <h1>Questions?</h1>
+        </div>
+
         <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
         </div>
-        -->
     </div>
 
+    <!--
     <div class="hint">
         <p>Use a spacebar or arrow keys to navigate</p>
     </div>
+    -->
 
     <script src="js/impress.js"></script>
+    <script type="text/javascript">
+        SyntaxHighlighter.defaults['gutter'] = false;
+        SyntaxHighlighter.all();
+    </script>
+
 </body>
 </html>
 
