@@ -143,6 +143,7 @@ h1  {
 }
 
 .tagline { font-size: 80%; }
+.creditline { font-size: 60%; }
 
 code, .step .syntaxhighlighter {
     width: 85% !important;
